@@ -1,0 +1,8 @@
+<launch>
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find transforms)/transform.rviz"/>
+    <!-- <node pkg="tf" type="static_transform_publisher" name="link2_broadcaster" args="0 0 2 0 1.5708 0 world link2 100" /> -->
+    <!-- <node pkg="tf" type="static_transform_publisher" name="link3_broadcaster" args="3 0 0 3.14159 0 0 world link3 100" /> -->
+    <node pkg="tf" type="static_transform_publisher" name="linkMid_broadcaster" args="0 1 0 0 0 1.5708 world link_middle 100" />
+    <node pkg="tf" type="static_transform_publisher" name="link2_broadcaster" args="0 0 0 0 -1.5708 0 link_middle link2 100" /> 
+    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 1 -1.5708 1.5708 0 world link1 100" />
+</launch>

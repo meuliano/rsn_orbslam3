@@ -1,0 +1,6 @@
+[submodule "Final_Project/src/ORB_SLAM3"]
+	path = Final_Project/src/ORB_SLAM3
+	url = https://github.com/cmanore25/ORB_SLAM3
+[submodule "Final_Project/src/orb_slam3_ros_wrapper"]
+	path = Final_Project/src/orb_slam3_ros_wrapper
+	url = https://github.com/cmanore25/orb_slam3_ros_wrapper
